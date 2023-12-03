@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vehicle Breakdown Assistance</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <h1>Vehicle Breakdown Assistance</h1>
+        </header>
+        <div class="content">
+            <div class="section">
+                <button id="requestAssistance" class="button">Request Assistance</button>
+                <div id="assistanceRequestForm" class="hidden form">
+                    <h2>Request Assistance</h2>
+                    <input type="text" id="location" class="input" placeholder="Location">
+                    <textarea id="issueDescription" class="input" placeholder="Issue Description"></textarea>
+                    <button id="submitRequest" class="submit-button">Submit</button>
+                </div>
+            </div>
+            <div class="section live-tracking-section">
+                <h2>Live Tracking</h2>
+                <p>Location: <span id="liveLocation">Not available</span></p>
+                <button id="startTracking" class="button">Start Tracking</button>
+            </div>
+            <div class="section membership-section">
+                <h2>Membership Program</h2>
+                <p>Enjoy the benefits of our membership program:</p>
+                <ul>
+                    <li>24/7 Assistance</li>
+                    <li>Discounted Services</li>
+                    <li>Priority Response</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
